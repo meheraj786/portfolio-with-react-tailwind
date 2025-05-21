@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme{
+  --color-bg: #1C1C1C;
+  --color-primary: #C9F31D;
+  --color-secondary: #131313;
+  --text-heading: 42px;
+  --text-subheading: 32px;
+  --text-body: 16px;
+  --font-primary: 'Lexend', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --amimation-floating: floating 2s ease-in-out infinite;
+}
+
+@keyframe floating{
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
