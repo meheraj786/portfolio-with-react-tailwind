@@ -1,8 +1,8 @@
 import React from 'react'
 
-const RoundIconBox = ({children}) => {
+const RoundIconBox = ({children, className}) => {
   return (
-    <div className='p-[10px] bg-primary rounded-full'>{children}</div>
+    <div className={`p-[10px] hover:bg-bg flex justify-center items-center text-4xl text-bg hvoer:text-primary w-[49px] h-[49px] bg-primary rounded-full ${className}`}>{children}</div>
   )
 }
 
