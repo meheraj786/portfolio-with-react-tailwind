@@ -13,9 +13,11 @@ const Marquee = () => {
       
       <marquee behavior="" direction="left">
               <Flex className="gap-[50px]">
+                
 {
   texts.map((text)=>(
-    <Flex className=" justify-center font-bold items-center gap-[50px]">
+    
+    <Flex className="font-primary justify-center font-black items-center gap-[50px]"> 
   {text} <GoNorthStar />
 
 </Flex>
