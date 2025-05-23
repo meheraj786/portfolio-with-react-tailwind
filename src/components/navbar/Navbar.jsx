@@ -1,5 +1,4 @@
 import React from 'react'
-import RoundIconBox from '../../layouts/RoundIconBox'
 import Container from '../../layouts/Container'
 import Flex from "../../layouts/Flex"
 import RoundedElemText from '../../layouts/RoundedElemText'
