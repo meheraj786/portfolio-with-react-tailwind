@@ -13,6 +13,7 @@
   --font-primary: 'Lexend', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
   --amimation-floating: floating 2s ease-in-out infinite;
+  --color-html: #DD4B25;
 }
 
 @keyframe floating{
