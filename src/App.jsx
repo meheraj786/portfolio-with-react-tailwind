@@ -8,6 +8,7 @@ import Services from './components/services/Services'
 import Skill from './components/skill/Skill'
 import Projects from './components/projects/Projects'
 import Blog from './components/blog/Blog'
+import Contact from './components/contact/Contact'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
 <Skill/>
 <Projects/>
 <Blog/>
+<Contact/>
 </>
   )
 }
