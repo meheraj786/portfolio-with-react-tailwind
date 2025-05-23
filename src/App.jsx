@@ -4,6 +4,7 @@ import './App.css'
 import Marquee from './components/marquee/Marquee'
 import Banner from './components/banner/Banner'
 import About from './components/about/About'
+import Services from './components/services/Services'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
 <Banner/>
 <Marquee/>
 <About/>
+<Services/>
 </>
   )
 }
