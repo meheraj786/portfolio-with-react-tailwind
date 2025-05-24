@@ -42,15 +42,15 @@ const Blog = () => {
           <Flex className="flex-wrap gap-y-[30px]">
             {
               blogs.map((blog, index) => (
-                <Flex key={index} className="blog-item  gap-x-[38px] border max-w-[630px] border-black group hover:border-primary rounded-[20px] py-[18px] px-[20px] bg-black">
-                  <div className="image rounded-[10px] w-[209px] h-[191px] bg-amber-50">
+                <Flex key={index} className="blog-item mx-auto md:gap-x-[38px] md:flex-row flex-col border max-w-[630px] border-black group hover:border-primary rounded-[20px] py-[18px] px-[20px] bg-black">
+                  <div className="image rounded-[10px] w-[209px] h-[191px] mb-5 md:mb-0 bg-amber-50">
                     <img src={blog.image} alt="" />
                   </div>
-                  <div className="content max-w-[395px]">
+                  <div className="content text-center md:text-0 max-w-[395px]">
                     <p>{blog.date}</p>
                     <h3 className='group-hover:text-primary font-primary text-subheading font-bold mt-[3px] max-w-[295px] mb-[6px]'>{blog.title}</h3>
                     <a href={blog.link}>
-                      <RoundedElemText  svg={<FiArrowUpRight/>}>
+                      <RoundedElemText className="mx-auto md:mx-0"  svg={<FiArrowUpRight/>}>
                         Read More
                       </RoundedElemText>
                     </a>

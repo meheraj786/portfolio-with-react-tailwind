@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="contact py-[121px] bg-dark-bg text-white">
       <Container>
-        <Flex>
+        <Flex className="flex-col md:flex-row">
           <div className="left ">
           <p>Get In Touch</p>
             <h2 className='font-primary max-w-[349px] text-subheading font-bold mt-2 mb-4'>Let’s Talk For your  
@@ -29,31 +29,33 @@ laudantium, totam rem aperiamc.</p>
             </div>
           </div>
           <div className="right md:w-[60%]">
-            <form action="">
-<Flex className="">
+            <form className='' action="">
+<Flex className="flex-col md:flex-row">
   <div>
     <label htmlFor="">Your Name</label>
-  <input type="text" className='placeholder:text-grey-200 w-[350px] my-3 p-5 rounded-[20px] bg-black' placeholder='Your Name' />
+  <input type="text" className='placeholder:text-grey-200 md:w-[350px] ml-5 md:ml-0 my-3 p-5 rounded-[20px] bg-black' placeholder='Your Name' />
   </div>
   <div>
   <label htmlFor="">Your Email</label>
-  <input type="email" className='placeholder:text-grey-200 p-5 w-[350px] my-3 rounded-[20px] bg-black' placeholder='Your Email' />
+  <input type="email" className='placeholder:text-grey-200 p-5 md:w-[350px] ml-5 md:ml-0 my-3 rounded-[20px] bg-black' placeholder='Your Email' />
   </div>
 </Flex>
-<Flex className="">
+<Flex className="md:flex-row flex-col">
   <div>
     <label htmlFor="">Your Number</label>
-  <input type="number" className='placeholder:text-grey-200 w-[350px] my-3 p-5 rounded-[20px] bg-black' placeholder='Your Name' />
+  <input type="number" className='placeholder:text-grey-200 md:w-[350px] ml-3 md:ml-0 my-3 p-5 rounded-[20px] bg-black' placeholder='Your Name' />
   </div>
   <div>
   <label htmlFor="">Your Subject</label>
-  <input type="text" className='placeholder:text-grey-200 p-5 w-[350px] my-3 rounded-[20px] bg-black' placeholder='Your Email' />
+  <input type="text" className='placeholder:text-grey-200 p-5 md:w-[350px] ml-3 md:ml-0 my-3 rounded-[20px] bg-black' placeholder='Your Email' />
   </div>
 </Flex>
+<div className='text-center md:text-left'>
 <label htmlFor="">Your Message</label>
 
-              <textarea name="" id="" className='placeholder:text-grey-200 w-[735px] p-5 rounded-[20px] my-3 p bg-black' cols="30" rows="10" placeholder='Your Message'></textarea>
-              <button className='flex bg-primary rounded-[20px] text-black text-[18px] font-medium cursor-pointer hover:bg-dark-bg hvoer:border-primary hover:text-primary border border-primary items-center gap-3 p-[20px]' type="submit">Submit <span className='text-2xl'><FiArrowUpRight/></span></button>
+<textarea name="" id="" className='placeholder:text-grey-200  md:w-[735px] p-5 rounded-[20px] my-3  bg-black' cols="30" rows="10" placeholder='Your Message'></textarea>
+<button className='flex bg-primary rounded-[20px] text-black text-[18px] font-medium cursor-pointer hover:bg-dark-bg hvoer:border-primary hover:text-primary border border-primary items-center gap-3 p-[20px] mx-auto md:mx-0' type="submit">Submit <span className='text-2xl'><FiArrowUpRight/></span></button>
+</div>
             </form>
           </div>
 
