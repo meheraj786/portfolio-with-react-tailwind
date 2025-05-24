@@ -35,7 +35,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
+    <div className="projects overflow-x-hidden bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
       <Container>
         <div data-aos="zoom-in" className="title text-center">
           <p>Latest Works</p>

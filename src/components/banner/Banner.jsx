@@ -14,7 +14,7 @@ const Banner = () => {
   }, []);
   
   return (
-    <div className="banner md:pt-[203px] pt-[120px]  pb-[88px] bg-dark-bg">
+    <div className="banner overflow-x-hidden md:pt-[203px] pt-[120px]  pb-[88px] bg-dark-bg">
       <Container>
         <Flex className="flex-col md:flex-row">
           <div data-aos="fade-right" className="banner_left  text-center md:text-left md:w-[50%] font-secondary">

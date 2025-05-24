@@ -13,7 +13,7 @@ const Contact = () => {
   }, []);
   const items= ["2 years of experience", "10+ Projects Completed", "5+ Clients Worked"]
   return (
-    <div className="contact pt-[70px] md:py-[121px] font-secondary bg-dark-bg text-white">
+    <div className="contact overflow-x-hidden pt-[70px] md:py-[121px] font-secondary bg-dark-bg text-white">
       <Container>
         <Flex className="flex-col md:flex-row">
           <div data-aos="zoom-in-right" className="left text-center md:text-left">

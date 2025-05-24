@@ -12,7 +12,7 @@ const Marquee = () => {
   }, []);
   const texts=["WEB DEVELOPMENT", "MERN STACK DEVELOPMEN", 'FRONT END DEVELOPMENT', 'BACKEND DEVELOPMENT', 'APP DEVELOPMENT']
   return (
-    <div  className='py-[40px] data-aos="fade-up" flex items-center md:text-[72px] text-[42px] font-bold font-primary bg-primary text-bg'>
+    <div  className='py-[40px] overflow-x-hidden data-aos="fade-up" flex items-center md:text-[72px] text-[42px] font-bold font-primary bg-primary text-bg'>
 
 
       

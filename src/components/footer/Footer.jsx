@@ -52,7 +52,7 @@ const Footer = () => {
   ]
   return (
 <>
-<div  className="footer text-center md:text-left text-white pt-[79px] bg-dark-bg">
+<div  className="footer overflow-x-hidden text-center md:text-left text-white pt-[79px] bg-dark-bg">
       <Container>
         <Flex  className="md:px-[88px] gap-y-5 md:gap-y-0 flex-col md:flex-row rounded-[20px] bg-black py-[104px]">
           <div data-aos="fade-up" className="left">

@@ -35,7 +35,7 @@ const Services = () => {
     },
   ]
   return (
-    <div className="services relative bg-dark-bg text-white pt-[103px] pb-[128px] font-secondary">
+    <div className="services overflow-x-hidden relative bg-dark-bg text-white pt-[103px] pb-[128px] font-secondary">
       <Container>
         <div data-aos="zoom-in" className="title text-center">
           <p className='text-body'>Popular Services</p>
@@ -49,7 +49,7 @@ const Services = () => {
       <div
         key={index}
         data-aos={aosType}
-        className="py-[35px] rounded-[20px] border border-bg group w-full hover:border-primary md:w-[576px] bg-bg px-[20px]"
+        className="py-[35px]  rounded-[20px] border border-bg group w-full hover:border-primary md:w-[576px] bg-bg px-[20px]"
       >
         <Flex>
           <div>

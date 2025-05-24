@@ -37,7 +37,7 @@ const Blog = () => {
       },
   ]
   return (
-    <div className="blog py-[60px] md:py-[107px] text-white bg-dark-bg">
+    <div className="blog overflow-x-hidden py-[60px] md:py-[107px] text-white bg-dark-bg">
       <Container>
         <div data-aos="zoom-in" className="title text-center">
           <p>News & Blog</p>
