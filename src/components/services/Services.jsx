@@ -30,7 +30,7 @@ const Services = () => {
           <p className='text-body'>Popular Services</p>
           <h2 className='text-heading font-primary max-w-[602px] mx-auto font-bold mt-[26px] mb-[40px]'>My <span className='text-primary'>Special Service </span> For your Business Development</h2>
         </div>
-        <Flex className="gap-x-[120px] flex-wrap gap-y-[98px]">
+        <Flex className="gap-x-[120px] flex-wrap md:gap-y-[98px] gap-y-8">
           {
             items.map((item)=>(
               <div className='py-[35px] rounded-[20px] border border-bg group  hover:border-primary md:w-[576px] bg-bg px-[20px] '>
@@ -47,7 +47,7 @@ const Services = () => {
             ))
           }
         </Flex>
-        <GoNorthStar className="absolute text-primary w-[96px] h-[95px] top-[55%] left-1/2 -translate-x-1/2 "/>
+        <GoNorthStar className="absolute hidden md:block text-primary w-[96px] h-[95px] top-[55%] left-1/2 -translate-x-1/2 "/>
 
         
       </Container>
