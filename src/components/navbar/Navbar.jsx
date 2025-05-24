@@ -5,12 +5,14 @@ import RoundedElemText from '../../layouts/RoundedElemText'
 import { FiArrowUpRight } from "react-icons/fi";
 import { TbMenu4 } from "react-icons/tb";
 import { IoMdClose } from "react-icons/io";
+import RoundIconBox from '../../layouts/RoundIconBox';
 
 
 
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [talk, setTalk] = useState(false);
   const navItems=[
     {
       item:"Home",
@@ -55,8 +57,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="details hidden md:block">
-          <RoundedElemText svg={<FiArrowUpRight />
-}>Let's Talk</RoundedElemText>
+        <RoundedElemText  className="mx-auto" onClick={() => {
+    console.log("clicked");
+    setTalk(true);
+  }}svg={<FiArrowUpRight />
+    }>Let's Talk
+                </RoundedElemText>
         </div>
           {
             show ? <IoMdClose  onClick={()=>setShow(!show)}  className='md:hidden text-4xl'/> : <TbMenu4 onClick={()=>setShow(!show)}  className='md:hidden text-4xl'/>
@@ -80,12 +86,40 @@ const Navbar = () => {
             </div>
             <hr className='border-primary my-[20px] w-[50%] mx-auto'/>
             <div className="details  w-full text-center md:hidden">
-              <RoundedElemText className="mx-auto" svg={<FiArrowUpRight />
-    }>Let's Talk</RoundedElemText>
+              <RoundedElemText  className="mx-auto" onClick={() => {
+    console.log("clicked");
+    setTalk(true);
+  }}svg={<FiArrowUpRight />
+    }>Let's Talk
+                </RoundedElemText>
             </div>
             </div>
             )
           }
+          {talk && (
+            <div
+              className="talk bg-bg fixed right-0 top-0 md:w-[391px] max-h-[905px] px-[43px] py-[37px]"
+            >
+              <RoundIconBox>
+                <IoMdClose onClick={() => setTalk(false)} className='text-4xl cursor-pointer' />
+              </RoundIconBox>
+              <div className="logo">
+                Meheraj
+              </div>
+              <h4>Unique Digital Ideas for
+              Successful Business</h4>
+              <p>Sed ut perspiciatis unde omnin natus
+              totam rem aperiam eaque.</p>
+
+              <div className="address">
+                <h4>Address</h4>
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+              
+            </div>
+          )}
       </Container>
     </div>
     </>
