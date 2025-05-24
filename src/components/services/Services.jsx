@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <div className="services relative bg-dark-bg text-white pt-[103px] pb-[128px] font-secondary">
       <Container>
-        <div className="title text-center">
+        <div data-aos="zoom-in" className="title text-center">
           <p className='text-body'>Popular Services</p>
           <h2 className='md:text-heading text-heading-sm font-primary max-w-[602px] mx-auto font-bold mt-[26px] mb-[40px]'>My <span className='text-primary'>Special Service </span> For your Business Development</h2>
         </div>

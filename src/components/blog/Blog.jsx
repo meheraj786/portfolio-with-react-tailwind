@@ -39,7 +39,7 @@ const Blog = () => {
   return (
     <div className="blog py-[60px] md:py-[107px] text-white bg-dark-bg">
       <Container>
-        <div className="title text-center">
+        <div data-aos="zoom-in" className="title text-center">
           <p>News & Blog</p>
           <h2 className='font-primary mt-[30px] mb-[76px] font-bold text-heading-sm md:text-heading'>Latest News & <span className='text-primary'>Blog</span></h2>
         </div>

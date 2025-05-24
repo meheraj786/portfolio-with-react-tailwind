@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <div className="projects bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
       <Container>
-        <div className="title text-center">
+        <div data-aos="zoom-in" className="title text-center">
           <p>Latest Works</p>
           <h2 className='font-primary mt-[22px] mb-[63px] font-bold text-heading-sm md:text-heading'>Explore My Popular <span className='text-primary'>Projects</span></h2>
         </div>
