@@ -46,9 +46,9 @@ const Footer = () => {
   ]
   return (
 <>
-<div className="footer text-white pt-[79px] bg-dark-bg">
+<div className="footer text-center md:text-left text-white pt-[79px] bg-dark-bg">
       <Container>
-        <Flex className="px-[88px] rounded-[20px] bg-black py-[104px]">
+        <Flex className="md:px-[88px] gap-y-5 md:gap-y-0 flex-col md:flex-row rounded-[20px] bg-black py-[104px]">
           <div className="left">
             Meheraj
           </div>
@@ -65,7 +65,7 @@ const Footer = () => {
               }
             </Flex>
             </ul>
-            <input type="email" className='border-b-1 mt-[50px] md:mr-4'/>
+            <input type="email" placeholder='Enter Your Email' className='border-b-1 mt-[50px] md:mr-4'/>
             <button className='bg-primary rounded-[20px] text-black text-[16px] font-medium cursor-pointer hover:bg-dark-bg hover:border-primary hover:text-primary border border-primary items-center gap-3 py-[10px] px-[20px]' type="submit">Submit</button>
           </div>
           <div className="right">
@@ -81,7 +81,7 @@ const Footer = () => {
       </Container>
     <div className="footer_bottom bg-dark-bg py-[40px]">
       <Container>
-        <Flex className="justify-between">
+        <Flex className="justify-between gap-y-4 md:gap-y-0 flex-col md:flex-row">
           <div className="left opacity-80">
             <p>© {year} Meheraj. All rights reserved.</p>
           </div>
@@ -100,7 +100,7 @@ const Footer = () => {
       </Container>
     </div>
     </div>
-    <div className="whatsapp p-[20px] text-[50px] bg-primary text-bg cursor-pointer hover:text-primary fixed right-[100px] bottom-[100px] hover:bg-transparent rounded-full hvoer:border-primary border border-primary opacity-80 hover:opacity-100">
+    <div className="whatsapp p-[10px] md:p-[20px] md:text-[50px] text-[30px] bg-primary text-bg cursor-pointer hover:text-primary fixed md:right-[100px] right-[50px] md:bottom-[100px] bottom-[50px] hover:bg-transparent rounded-full hvoer:border-primary border border-primary opacity-80 hover:opacity-100">
 <a href='https://api.whatsapp.com/send?phone=1989162543&text=I%20want%20to%20know%20about%20your%20products?' target='blank'><FaWhatsapp /></a>
     </div>
     </>
