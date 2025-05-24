@@ -39,7 +39,7 @@ const Navbar = () => {
   ]
   return (
     <>
-    <div className="navbar py-6 fixed w-full bg-bg text-white font-secondary">
+    <div className="navbar py-6 z-[99999] fixed w-full bg-bg text-white font-secondary">
       <Container>
         <Flex className="px-5 md:px-0">
         <div className="logo">Meheraj</div>

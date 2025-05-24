@@ -69,7 +69,7 @@ const Footer = () => {
             <button className='bg-primary rounded-[20px] text-black text-[16px] font-medium cursor-pointer hover:bg-dark-bg hover:border-primary hover:text-primary border border-primary items-center gap-3 py-[10px] px-[20px]' type="submit">Submit</button>
           </div>
           <div className="right">
-          <h4 className='text-[24px] mb-[38px] text-medium'>Address</h4>
+          <h4 className='text-[24px] mb-3 md:mb-[38px] text-medium'>Address</h4>
           <ul>
             <li className='mb-[15px]'>Mohammadpur, Dhaka, Bangladesh</li>
             <li className='mb-[15px]'>meherajhosen786@gmail.com</li>

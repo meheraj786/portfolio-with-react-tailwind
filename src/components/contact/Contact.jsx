@@ -8,20 +8,20 @@ import RoundedElemText from '../../layouts/RoundedElemText';
 const Contact = () => {
   const items= ["2 years of experience", "10+ Projects Completed", "5+ Clients Worked"]
   return (
-    <div className="contact py-[121px] bg-dark-bg text-white">
+    <div className="contact pt-[70px] md:py-[121px] font-secondary bg-dark-bg text-white">
       <Container>
         <Flex className="flex-col md:flex-row">
-          <div className="left ">
+          <div className="left text-center md:text-left">
           <p>Get In Touch</p>
-            <h2 className='font-primary max-w-[349px] text-subheading font-bold mt-2 mb-4'>Let’s Talk For your  
+            <h2 className='font-primary max-w-[349px] md:text-subheading text-subheading-sm font-bold mt-2 mb-4'>Let’s Talk For your  
             <span className='text-primary'> Next Projects</span></h2>
-            <p className='text-body max-w-[349px] font-regular'>Sed ut perspiciatis unde omnis iste natus to
+            <p className='md:text-body text-body-sm max-w-[349px] font-regular'>Sed ut perspiciatis unde omnis iste natus to
 voluptatem accusantium doloremque
 laudantium, totam rem aperiamc.</p>
-            <div className='space-y-4 mt-[57px]'>
+            <div className='space-y-4  mt-[57px]'>
               {
                 items.map((item) => (
-                  <RoundedElemText className="font-medium flex-row-reverse text-body" svg={<GoNorthStar/>}>
+                  <RoundedElemText className="font-medium flex-row-reverse mb-5  text-body" svg={<GoNorthStar/>}>
 {item}
                   </RoundedElemText>
                 ))
@@ -51,7 +51,7 @@ laudantium, totam rem aperiamc.</p>
   </div>
 </Flex>
 <div className='text-center md:text-left'>
-<label htmlFor="">Your Message</label>
+<label className='hidden md:block' htmlFor="">Your Message</label>
 
 <textarea name="" id="" className='placeholder:text-grey-200  md:w-[735px] p-5 rounded-[20px] my-3  bg-black' cols="30" rows="10" placeholder='Your Message'></textarea>
 <button className='flex bg-primary rounded-[20px] text-black text-[18px] font-medium cursor-pointer hover:bg-dark-bg hvoer:border-primary hover:text-primary border border-primary items-center gap-3 p-[20px] mx-auto md:mx-0' type="submit">Submit <span className='text-2xl'><FiArrowUpRight/></span></button>

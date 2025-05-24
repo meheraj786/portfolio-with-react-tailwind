@@ -28,11 +28,11 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects bg-dark-bg text-white font-secondary py-[99px]">
+    <div className="projects bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
       <Container>
         <div className="title text-center">
           <p>Latest Works</p>
-          <h2 className='font-primary mt-[22px] mb-[63px] font-bold text-heading'>Explore My Popular <span className='text-primary'>Projects</span></h2>
+          <h2 className='font-primary mt-[22px] mb-[63px] font-bold text-heading-sm md:text-heading'>Explore My Popular <span className='text-primary'>Projects</span></h2>
         </div>
         <div className="projects space-y-10">
           {
@@ -44,9 +44,9 @@ const Projects = () => {
                 </div>
                 </div>
                 <div className="right text-center md:text-left">
-                <p className='font-medium  text-primary text-body'>{project.category}</p>
-                <h3 className='text-subheading font-primary max-w-[529px]  font-bold mt-3 mb-[17px]'>{project.title}</h3>
-                <p className='font-medium text-body mb-[55px] max-w-[392px]'>{project.description}</p>
+                <p className='font-medium  text-primary text-body-sm md:text-body'>{project.category}</p>
+                <h3 className='text-subheading-sm md:text-subheading font-primary max-w-[529px]  font-bold mt-3 mb-[17px]'>{project.title}</h3>
+                <p className='font-medium text-body-sm md:text-body mb-[55px] mx-auto md:mx-0 max-w-[392px]'>{project.description}</p>
                 <a  href="#"><RoundIconBox className='mx-auto md:mx-0'><FiArrowUpRight/></RoundIconBox></a>
 
                 </div>
@@ -54,7 +54,7 @@ const Projects = () => {
             ))
           }
         </div>
-        <RoundedElemText className="text-center text-subheading mx-auto mt-[158px] font-bold" svg={<FiArrowUpRight/>}>View More</RoundedElemText>
+        <RoundedElemText className="text-center md:text-subheading text-subheading-sm mx-auto mt-[80px] md:mt-[158px] font-bold" svg={<FiArrowUpRight/>}>View More</RoundedElemText>
       </Container>
     </div>
   );

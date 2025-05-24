@@ -8,8 +8,11 @@
   --color-primary: #C9F31D;
   --color-secondary: #131313;
   --text-heading: 42px;
+  --text-heading-sm: 32px;
   --text-subheading: 32px;
+  --text-subheading-sm: 22px;
   --text-body: 16px;
+  --text-body-sm: 14px;
   --font-primary: 'Lexend', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
   --amimation-floating: floating 2s ease-in-out infinite;

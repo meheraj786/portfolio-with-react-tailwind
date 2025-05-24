@@ -11,9 +11,9 @@ const About = () => {
         <Flex className="bg-black text-center md:text-left flex-col md:flex-row px-3 md:px-[77px] py-[91px] rounded-[10px]">
           <div className="about-left md:w-[50%]">
             <p className='text-body mb-2 text-white'>About Me</p>
-            <h3 className='text-white text-subheading font-bold md:w-[510px] font-primary'>Professional <span className='text-primary'>Problem Solutions </span>
+            <h3 className='text-white md:text-subheading text-subheading-sm font-bold md:w-[510px] font-primary'>Professional <span className='text-primary'>Problem Solutions </span>
             For Digital Products</h3>
-            <p className='text-body mt-4 mb-9 md:w-[350px] text-white'>Sed ut perspiciatis unde omnis iste natus to
+            <p className='md:text-body text-body-sm mt-4 mb-9 md:w-[350px] text-white'>Sed ut perspiciatis unde omnis iste natus to
 voluptatem accusantium doloremque
 laudantium, totam rem aperiamc</p>
 

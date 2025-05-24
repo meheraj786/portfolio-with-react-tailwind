@@ -28,16 +28,16 @@ const Services = () => {
       <Container>
         <div className="title text-center">
           <p className='text-body'>Popular Services</p>
-          <h2 className='text-heading font-primary max-w-[602px] mx-auto font-bold mt-[26px] mb-[40px]'>My <span className='text-primary'>Special Service </span> For your Business Development</h2>
+          <h2 className='md:text-heading text-heading-sm font-primary max-w-[602px] mx-auto font-bold mt-[26px] mb-[40px]'>My <span className='text-primary'>Special Service </span> For your Business Development</h2>
         </div>
         <Flex className="gap-x-[120px] flex-wrap md:gap-y-[98px] gap-y-8">
           {
             items.map((item)=>(
-              <div className='py-[35px] rounded-[20px] border border-bg group  hover:border-primary md:w-[576px] bg-bg px-[20px] '>
+              <div className='py-[35px] rounded-[20px] border border-bg group w-full hover:border-primary md:w-[576px] bg-bg px-[20px] '>
                 <Flex>
                 <div>
-                <h3 className='text-subheading font-primary font-bold mb-[7px]'>{item.title}</h3>
-                <p className='text-body'>{item.description}</p>
+                <h3 className='text-subheading-sm md:text-subheading font-primary font-bold mb-[7px]'>{item.title}</h3>
+                <p className='text-body-sm md:text-body'>{item.description}</p>
                 </div>
                 <RoundIconBox className="group-hover:bg-bg group-hover:text-primary">
                 <GoNorthStar/>
