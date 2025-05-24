@@ -1,5 +1,5 @@
 import React,{  } from 'react'
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/navbar/Navbar'
 import './App.css'
 import Marquee from './components/marquee/Marquee'
 import Banner from './components/banner/Banner'
