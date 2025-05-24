@@ -67,19 +67,19 @@ const Skill = () => {
   return (
     <div className="skill text-white font-secondary bg-dark-bg">
       <Container>
-        <Flex className="bg-black gap-[65px] rounded-[20px] px-[90px] py-[74px]">
+        <Flex className="bg-black text-center md:text-left md:flex-row flex-col gap-[65px] rounded-[20px] px-[90px] py-[74px]">
           <div className="skill-left">
             <p>My Skill</p>
             <h3 className='text-subheading mt-2 mb-4 font-primary font-bold w-[349px]'>Let’s Explore Popular <span className='text-primary'>Skills &  Experience</span></h3>
             <p className='max-w-[349px]'>Sed ut perspiciatis unde omnis iste natus to
 voluptatem accusantium doloremque
 laudantium, totam rem aperiamc</p>
-<RoundedElemText className="mt-[87px]" svg={<FiArrowUpRight/>}>
+<RoundedElemText className="mt-[87px] mx-auto md:mx-0" svg={<FiArrowUpRight/>}>
   Learn More
 </RoundedElemText>
           </div>
           <div className="skill-right w-[70%]">
-            <Flex className="flex-wrap  w-full mx-auto gap-y-[43px]">
+            <Flex className="flex-wrap  w-full mx-auto md:gap-y-[43px] gap-y-5">
               {
                 skills.map((skill)=>(
                   <Flex className='text-center flex-col border border-bg bg-dark-bg cursor-pointer group hover:border-primary rounded-[20px] pb-2 w-[161px] pt-[27px] px-[11px] '>
