@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../../layouts/Container'
 import Flex from '../../layouts/Flex'
 import { GoNorthStar } from "react-icons/go";
 import { FiArrowUpRight } from "react-icons/fi";
 import RoundedElemText from '../../layouts/RoundedElemText';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const items= ["2 years of experience", "10+ Projects Completed", "5+ Clients Worked"]
   return (
     <div className="contact pt-[70px] md:py-[121px] font-secondary bg-dark-bg text-white">
       <Container>
         <Flex className="flex-col md:flex-row">
-          <div className="left text-center md:text-left">
+          <div data-aos="zoom-in-right" className="left text-center md:text-left">
           <p>Get In Touch</p>
             <h2 className='font-primary max-w-[349px] md:text-subheading text-subheading-sm font-bold mt-2 mb-4'>Let’s Talk For your  
             <span className='text-primary'> Next Projects</span></h2>
@@ -28,7 +33,7 @@ laudantium, totam rem aperiamc.</p>
               }
             </div>
           </div>
-          <div className="right md:w-[60%]">
+          <div data-aos="zoom-in-left" className="right md:w-[60%]">
             <form className='' action="">
 <Flex className="flex-col md:flex-row">
   <div>

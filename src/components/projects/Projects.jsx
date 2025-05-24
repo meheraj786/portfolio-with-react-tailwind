@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../../layouts/Container'
 import Flex from '../../layouts/Flex'
 import RoundIconBox from '../../layouts/RoundIconBox';
 import { FiArrowUpRight } from "react-icons/fi";
 import RoundedElemText from '../../layouts/RoundedElemText';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Projects = () => {
+  
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const projects= [
     {
       category: "Web Design",
@@ -38,12 +45,12 @@ const Projects = () => {
           {
             projects.map((project, index) => (
               <Flex key={index} className={index % 2 !== 0 ? "md:flex-row-reverse flex-col" : "md:flex-row flex-col"}>
-                <div className="left mb-5 md:mb-0 w-full md:w-1/2">
+                <div data-aos="flip-left" className="left  mb-5 md:mb-0 w-full md:w-1/2">
                 <div className="image max-w-[645px] h-[500px] bg-amber-50 rounded-[10px] overflow-y-auto">
 
                 </div>
                 </div>
-                <div className="right text-center md:text-left">
+                <div data-aos="flip-right" className="right text-center md:text-left">
                 <p className='font-medium  text-primary text-body-sm md:text-body'>{project.category}</p>
                 <h3 className='text-subheading-sm md:text-subheading font-primary max-w-[529px]  font-bold mt-3 mb-[17px]'>{project.title}</h3>
                 <p className='font-medium text-body-sm md:text-body mb-[55px] mx-auto md:mx-0 max-w-[392px]'>{project.description}</p>

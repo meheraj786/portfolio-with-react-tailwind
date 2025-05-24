@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../../layouts/Container'
 import Flex from '../../layouts/Flex'
 import RoundedElemText from '../../layouts/RoundedElemText'
@@ -11,12 +11,17 @@ import { FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 
 const Skill = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const skills= [
     {
       icon: <FaFigma />,
@@ -68,7 +73,7 @@ const Skill = () => {
     <div className="skill text-white font-secondary bg-dark-bg">
       <Container>
         <Flex className="bg-black text-center md:text-left md:flex-row flex-col gap-[65px] rounded-[20px] px-[90px] py-[74px]">
-          <div className="skill-left">
+          <div data-aos="zoom-in-right" className="skill-left ">
             <p>My Skill</p>
             <h3 className='text-subheading-sm md:text-subheading mt-2 mb-4 font-primary font-bold w-[349px]'>Let’s Explore Popular <span className='text-primary'>Skills &  Experience</span></h3>
             <p className='max-w-[349px] md:text-body text-body-sm'>Sed ut perspiciatis unde omnis iste natus to
@@ -78,7 +83,7 @@ laudantium, totam rem aperiamc</p>
   Learn More
 </RoundedElemText>
           </div>
-          <div className="skill-right w-[70%]">
+          <div data-aos="zoom-in-left" className="skill-right w-[70%]">
             <Flex className="flex-wrap  w-full mx-auto md:gap-y-[43px] gap-y-5">
               {
                 skills.map((skill)=>(
@@ -87,7 +92,6 @@ laudantium, totam rem aperiamc</p>
                     <h4 className='font-primary text-[28px] font-bold mt-2 mb-4'>{skill.name}</h4>
                     <span className='rounded-[10px] px-[38px] bg-black group-hover:bg-primary group-hover:text-black font-bold py-[5px]'>{skill.percent}</span>
                   </Flex>
-
                 ))
               }
             </Flex>

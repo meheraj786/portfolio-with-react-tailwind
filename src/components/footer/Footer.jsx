@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../../layouts/Container'
 import Flex from '../../layouts/Flex'
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 
 const Footer = () => {
+  
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const year= new Date().getFullYear()
   const socialIcons= [
     {
@@ -46,13 +52,13 @@ const Footer = () => {
   ]
   return (
 <>
-<div className="footer text-center md:text-left text-white pt-[79px] bg-dark-bg">
+<div  className="footer text-center md:text-left text-white pt-[79px] bg-dark-bg">
       <Container>
-        <Flex className="md:px-[88px] gap-y-5 md:gap-y-0 flex-col md:flex-row rounded-[20px] bg-black py-[104px]">
-          <div className="left">
+        <Flex  className="md:px-[88px] gap-y-5 md:gap-y-0 flex-col md:flex-row rounded-[20px] bg-black py-[104px]">
+          <div data-aos="fade-up" className="left">
             Meheraj
           </div>
-          <div className="mid">
+          <div data-aos="fade-up" className="mid">
             <h4 className='text-[24px] text-medium'>Quick Links</h4>
             <ul>
             <Flex className="gap-5 mt-3">
@@ -68,7 +74,7 @@ const Footer = () => {
             <input type="email" placeholder='Enter Your Email' className='border-b-1 mt-[50px] md:mr-4'/>
             <button className='bg-primary rounded-[20px] text-black text-[16px] font-medium cursor-pointer hover:bg-dark-bg hover:border-primary hover:text-primary border border-primary items-center gap-3 py-[10px] px-[20px]' type="submit">Submit</button>
           </div>
-          <div className="right">
+          <div data-aos="fade-up" className="right">
           <h4 className='text-[24px] mb-3 md:mb-[38px] text-medium'>Address</h4>
           <ul>
             <li className='mb-[15px]'>Mohammadpur, Dhaka, Bangladesh</li>

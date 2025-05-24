@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../../layouts/Container'
 import Flex from '../../layouts/Flex'
 import RoundedElemText from '../../layouts/RoundedElemText'
 import { FiArrowUpRight } from "react-icons/fi";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Blog = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const blogs= [
     {
       date: "12 Feb 2023",
@@ -38,7 +43,7 @@ const Blog = () => {
           <p>News & Blog</p>
           <h2 className='font-primary mt-[30px] mb-[76px] font-bold text-heading-sm md:text-heading'>Latest News & <span className='text-primary'>Blog</span></h2>
         </div>
-        <div className="blogs">
+        <div data-aos="flip-up" className="blogs">
           <Flex className="flex-wrap gap-y-[30px]">
             {
               blogs.map((blog, index) => (

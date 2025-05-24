@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { GoNorthStar } from "react-icons/go";
 
 import Flex from '../../layouts/Flex'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Marquee = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const texts=["WEB DEVELOPMENT", "MERN STACK DEVELOPMEN", 'FRONT END DEVELOPMENT', 'BACKEND DEVELOPMENT', 'APP DEVELOPMENT']
   return (
-    <div className='py-[40px] flex items-center md:text-[72px] text-[42px] font-bold font-primary bg-primary text-bg'>
+    <div  className='py-[40px] data-aos="fade-up" flex items-center md:text-[72px] text-[42px] font-bold font-primary bg-primary text-bg'>
 
 
       
-      <marquee behavior="" direction="left">
+      <marquee data-aos="fade-up" behavior="" direction="left">
               <Flex className="gap-[50px]">
                 
 {
