@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <div className="banner pt-[103px] pb-[88px] bg-dark-bg">
       <Container>
-        <Flex>
+        <Flex className="flex-col md:flex-row">
           <div className="banner_left text-left md:w-[50%] font-secondary">
             <h5 className='text-[32px] font-medium text-primary'>Hello I'm</h5>
             <h1 className='font-secondary mt-[27px] mb-[12px] text-[98px] font-bold text-white'>Meheraj Hosen</h1>
@@ -20,7 +20,7 @@ const Banner = () => {
 }>Download My Resume</RoundedElemText>
           </div>
           <div className="banner_right flex justify-center md:w-[50%]">
-            <BannerShape/>
+            <BannerShape className="w-[50px]"/>
           </div>
         </Flex>
 
