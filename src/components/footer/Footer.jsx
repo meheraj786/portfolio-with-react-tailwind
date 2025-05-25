@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Logo from '../../layouts/Logo';
 
 
 
@@ -56,7 +57,7 @@ const Footer = () => {
       <Container>
         <Flex  className="md:px-[88px] gap-y-5 md:gap-y-0 flex-col md:flex-row rounded-[20px] bg-black py-[104px]">
           <div data-aos="fade-up" className="left">
-            Meheraj
+            <Logo/>
           </div>
           <div data-aos="fade-up" className="mid">
             <h4 className='text-[24px] text-medium'>Quick Links</h4>

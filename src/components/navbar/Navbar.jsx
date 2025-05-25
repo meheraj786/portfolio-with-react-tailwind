@@ -12,6 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { LuArrowUpLeft } from "react-icons/lu";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Logo from '../../layouts/Logo';
 
 
 
@@ -68,7 +69,9 @@ const Navbar = () => {
     <div className="navbar overflow-x-hidden py-6 z-[99999] fixed w-[100vw] bg-bg text-white font-secondary">
       <Container>
         <Flex className="px-5 md:px-0">
-        <div className="logo">Meheraj</div>
+        <div className="logo">
+          <Logo/>
+        </div>
         <div className="items">
           <ul>
             <Flex className='flex-row hidden md:flex gap-x-[35px]'>
@@ -128,7 +131,7 @@ const Navbar = () => {
                 <LuArrowUpLeft  onClick={() => setTalk(false)} className='text-4xl cursor-pointer' />
               </RoundIconBox>
               <div className="logo mt-[50px] mb-6">
-                Meheraj
+                <Logo/>
               </div>
               <h4 className='text-[22px] mb-[20px]'>Unique Digital Ideas for
               Successful Business</h4>

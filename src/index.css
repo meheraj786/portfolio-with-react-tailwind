@@ -21,6 +21,19 @@
   --color-html: #DD4B25;
 }
 
+.stroke-text {
+  -webkit-text-stroke: 1px #C9F31D; /* Lime color */
+  color: transparent;
+}
+.stroke-text-white {
+  -webkit-text-stroke: 1px #ffffff; /* Lime color */
+  color: transparent;
+}
+.stroke-text-black {
+  -webkit-text-stroke: 1px #000000; /* Lime color */
+  color: transparent;
+}
+
 @keyframe floating{
   0% {
     transform: translateY(0px);
