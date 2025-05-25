@@ -35,7 +35,7 @@ const Services = () => {
     },
   ]
   return (
-    <div className="services overflow-x-hidden relative bg-dark-bg text-white pt-[103px] pb-[128px] font-secondary">
+    <div className="services bg-[url(assets/lines.png)] bg-no-repeat bg-cover overflow-x-hidden relative bg-dark-bg text-white pt-[103px] pb-[128px] font-secondary">
       <Container>
         <div data-aos="zoom-in" className="title text-center">
           <p className='text-body'>Popular Services</p>

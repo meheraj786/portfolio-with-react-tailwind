@@ -13,7 +13,11 @@ const Contact = () => {
   }, []);
   const items= ["2 years of experience", "10+ Projects Completed", "5+ Clients Worked"]
   return (
-    <div className="contact overflow-x-hidden pt-[70px] md:py-[121px] font-secondary bg-dark-bg text-white">
+    <div className="contact relative overflow-x-hidden pt-[70px] md:py-[121px] font-secondary bg-dark-bg text-white">
+      <div className="circle-violet absolute w-[152px] h-[152px] left-[10%] top-[40%] animate-pulse rounded-full bg-[rgba(47,17,30,0.48)] shadow-[0_0_100px_100px_rgba(47,17,30,0.48)]">
+        
+
+        </div>
       <Container>
         <Flex className="flex-col md:flex-row">
           <div data-aos="zoom-in-right" className="left text-center md:text-left">

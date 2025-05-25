@@ -38,7 +38,8 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="blog overflow-x-hidden py-[60px] md:py-[107px] text-white bg-dark-bg">
+    <div className="blog  relative overflow-x-hidden py-[60px] md:py-[107px] text-white bg-dark-bg">
+      <div className="circle-blue absolute w-[152px] h-[152px] right-[10%] top-[10%] animate-pulse rounded-full bg-[rgba(82,73,206,0.21)] shadow-[0_0_100px_100px_rgba(82,73,206,0.21)]"></div>
       <Container>
         <div data-aos="zoom-in" className="title text-center">
           <p>News & Blog</p>

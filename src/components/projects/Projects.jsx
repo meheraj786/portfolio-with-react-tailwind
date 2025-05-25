@@ -41,7 +41,12 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects overflow-x-hidden bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
+    <div className="projects  relative overflow-x-hidden bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
+            <div className="circle-violet absolute w-[152px] h-[152px] left-[10%] top-[40%] animate-pulse rounded-full bg-[rgba(47,17,30,0.48)] shadow-[0_0_100px_100px_rgba(47,17,30,0.48)]">
+        
+
+        </div>
+        <div className="circle-blue absolute w-[152px] h-[152px] right-[10%] top-[10%] animate-pulse rounded-full bg-[rgba(82,73,206,0.21)] shadow-[0_0_100px_100px_rgba(82,73,206,0.21)]"></div>
       <Container>
         <div data-aos="zoom-in" className="title text-center">
           <p>Latest Works</p>

@@ -70,7 +70,7 @@ const Skill = () => {
     },
   ]
   return (
-    <div className="skill overflow-x-hidden text-white font-secondary bg-dark-bg">
+    <div className="skill bg-[url(assets/lines2.png)] bg-cover overflow-x-hidden text-white font-secondary bg-dark-bg">
       <Container>
         <Flex className="bg-black text-center md:text-left md:flex-row flex-col gap-[65px] rounded-[20px] px-[90px] py-[74px]">
           <div data-aos="zoom-in-right" className="skill-left ">
