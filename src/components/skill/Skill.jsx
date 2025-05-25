@@ -79,7 +79,7 @@ const Skill = () => {
             <p className='max-w-[349px] md:text-body text-body-sm'>Sed ut perspiciatis unde omnis iste natus to
 voluptatem accusantium doloremque
 laudantium, totam rem aperiamc</p>
-<RoundedElemText className="mt-[87px] mx-auto md:mx-0" svg={<FiArrowUpRight/>}>
+<RoundedElemText className="mt-[87px] md:justify-start justify-center md:mx-0" svg={<FiArrowUpRight/>}>
   Learn More
 </RoundedElemText>
           </div>

@@ -55,7 +55,7 @@ const Blog = () => {
                     <p>{blog.date}</p>
                     <h3 className='group-hover:text-primary font-primary text-subheading-sm md:text-subheading font-bold mt-[3px] max-w-[295px] mb-[6px]'>{blog.title}</h3>
                     <a href={blog.link}>
-                      <RoundedElemText className="mx-auto md:mx-0"  svg={<FiArrowUpRight/>}>
+                      <RoundedElemText className="md:justify-start justify-center"  svg={<FiArrowUpRight/>}>
                         Read More
                       </RoundedElemText>
                     </a>

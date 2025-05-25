@@ -26,7 +26,7 @@ laudantium, totam rem aperiamc.</p>
             <div className='space-y-4  mt-[57px]'>
               {
                 items.map((item) => (
-                  <RoundedElemText className="font-medium flex-row-reverse mb-5  text-body" svg={<GoNorthStar/>}>
+                  <RoundedElemText className="font-medium  flex-row-reverse mb-5 md:justify-end justify-center text-body" svg={<GoNorthStar/>}>
 {item}
                   </RoundedElemText>
                 ))
