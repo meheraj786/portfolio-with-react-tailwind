@@ -41,7 +41,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects  relative overflow-x-hidden bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
+    <div id='projects' className="projects  relative overflow-x-hidden bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">
             <div className="circle-violet absolute w-[152px] h-[152px] left-[10%] top-[40%] animate-pulse rounded-full bg-[rgba(47,17,30,0.48)] shadow-[0_0_100px_100px_rgba(47,17,30,0.48)]">
         
 

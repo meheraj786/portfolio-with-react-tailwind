@@ -15,7 +15,6 @@ function App() {
 
   return (
 <>
-<Navbar/>
 <Banner/>
 <Marquee/>
 <About/>
@@ -24,7 +23,6 @@ function App() {
 <Projects/>
 <Blog/>
 <Contact/>
-<Footer/>
 </>
   )
 }

@@ -15,7 +15,7 @@ const Banner = () => {
   }, []);
   
   return (
-    <div className="banner overflow-x-hidden md:pt-[203px] pt-[140px]  pb-[88px] bg-dark-bg">
+    <div id='banner' className="banner overflow-x-hidden md:pt-[203px] pt-[140px]  pb-[88px] bg-dark-bg">
       <div className="circle-violet absolute w-[152px] h-[152px] left-[10%] top-[40%] animate-pulse rounded-full bg-[rgba(47,17,30,0.48)] shadow-[0_0_100px_100px_rgba(47,17,30,0.48)]">
         
 

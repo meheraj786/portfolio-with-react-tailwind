@@ -19,6 +19,9 @@
   --font-secondary: 'Poppins', sans-serif;
   --color-html: #DD4B25;
 }
+html {
+  scroll-behavior: smooth;
+}
 .animate-floating {
   animation: floating 2s ease-in-out infinite;
 }

@@ -11,7 +11,7 @@ const About = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="about relative overflow-x-hidden py-[150px] bg-dark-bg">
+    <div id='about' className="about relative overflow-x-hidden py-[150px] bg-dark-bg">
             <div className="circle-blue absolute w-[152px] h-[152px] left-[10%] top-[20%] animate-pulse rounded-full bg-[rgba(82,73,206,0.21)] shadow-[0_0_100px_100px_rgba(82,73,206,0.21)]"></div>
       <Container>
         <Flex className="bg-black text-center md:text-left flex-col md:flex-row px-3 md:px-[77px] py-[91px] rounded-[10px]">
