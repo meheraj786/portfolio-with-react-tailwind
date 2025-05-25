@@ -6,6 +6,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 import RoundedElemText from '../../layouts/RoundedElemText';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import project1 from '../../assets/project1.png'
+import project2 from '../../assets/project2.png'
+import project3 from '../../assets/project3.png'
 
 const Projects = () => {
   
@@ -15,18 +18,21 @@ const Projects = () => {
 
   const projects= [
     {
+      img: project1,
       category: "Web Design",
       title: "A Simple Website Design with Figma",
       description: "Sed ut perspiciatis unde omnis natus totam rem aperiam eaque inventore veritatis",
       link: "#"
     },
     {
+      img: project2,
       category: "Web Design",
       title: "Another Design in Figma",
       description: "Voluptatem accusantium doloremque laudantium, totam rem aperiam",
       link: "#"
     },
     {
+      img: project3,
       category: "UI/UX",
       title: "Mobile App Design",
       description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
@@ -46,7 +52,8 @@ const Projects = () => {
             projects.map((project, index) => (
               <Flex key={index} className={index % 2 !== 0 ? "md:flex-row-reverse flex-col" : "md:flex-row flex-col"}>
                 <div data-aos="flip-left" className="left  mb-5 md:mb-0 w-full md:w-1/2">
-                <div className="image max-w-[645px] h-[500px] bg-amber-50 rounded-[10px] overflow-y-auto">
+                <div className="image max-w-[645px] h-[500px] bg-amber-50 rounded-[10px] overflow-y-auto" >
+                  <img src={project.img} alt="" />
 
                 </div>
                 </div>

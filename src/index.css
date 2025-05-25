@@ -17,8 +17,10 @@
   --text-body-sm: 14px;
   --font-primary: 'Lexend', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
-  --amimation-floating: floating 2s ease-in-out infinite;
   --color-html: #DD4B25;
+}
+.animate-floating {
+  animation: floating 2s ease-in-out infinite;
 }
 
 .stroke-text {
@@ -34,7 +36,7 @@
   color: transparent;
 }
 
-@keyframe floating{
+@keyframes floating{
   0% {
     transform: translateY(0px);
   }

@@ -88,7 +88,7 @@ laudantium, totam rem aperiamc</p>
               {
                 skills.map((skill)=>(
                   <Flex className='text-center flex-col border mx-auto md:mx-0 border-bg bg-dark-bg cursor-pointer group hover:border-primary rounded-[20px] pb-2 w-[161px] pt-[27px] px-[11px] '>
-                    <i className='text-[60px] mx-auto group-hover:text-primary'>{skill.icon}</i>
+                    <i className='text-[60px] mx-auto group-hover:animate-bounce group-hover:text-primary'>{skill.icon}</i>
                     <h4 className='font-primary text-[28px] font-bold mt-2 mb-4'>{skill.name}</h4>
                     <span className='rounded-[10px] px-[38px] bg-black group-hover:bg-primary group-hover:text-black font-bold py-[5px]'>{skill.percent}</span>
                   </Flex>

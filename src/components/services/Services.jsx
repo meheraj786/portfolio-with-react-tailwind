@@ -67,7 +67,7 @@ const Services = () => {
   })
 }
         </Flex>
-        <GoNorthStar className="absolute hidden md:block text-primary w-[96px] h-[95px] top-[55%] left-1/2 -translate-x-1/2 "/>
+        <GoNorthStar className="absolute hidden md:block text-primary w-[96px] animate-pulse h-[95px] top-[55%] left-1/2 -translate-x-1/2 "/>
 
         
       </Container>
