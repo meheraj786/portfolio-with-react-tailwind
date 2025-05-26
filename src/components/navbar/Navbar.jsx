@@ -21,7 +21,26 @@ const Navbar = () => {
 
   const [show, setShow] = useState(false);
   const [talk, setTalk] = useState(false);
-  const [dark, setDark] = useState(true)
+  const [dark, setDark] = useState(() => {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      return true;
+    } else {
+      document.documentElement.classList.remove('dark');
+      return false;
+    }
+  });
+  useEffect(() => {
+    if (dark) {
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
+    }
+  }, [dark]);
+
+  
 
   const socialIcons= [
     {

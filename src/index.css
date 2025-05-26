@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
@@ -21,7 +22,23 @@
   --font-secondary: 'Poppins', sans-serif;
   --font-counter: 'Orbitron', 'sans-serif';
   --color-html: #DD4B25;
+  --color-h1: #ffffff;
+  --color-moon: #ffffff;
 }
+
+@layer theme {
+  .dark {
+    --color-primary: #C9F31D; 
+    --color-secondary: #f8ecec; 
+    --color-bg: #afb4ae;
+    --color-dark-bg: #ffffff;
+    --color-black: #9e9999;
+    --color-white: #000000;
+    --color-h1: #000000;
+  }
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,7 +51,7 @@ html {
   color: transparent;
 }
 .stroke-text-white {
-  -webkit-text-stroke: 1px #ffffff; /* Lime color */
+  -webkit-text-stroke: 1px var(--color-h1); /* Lime color */
   color: transparent;
 }
 .stroke-text-black {
