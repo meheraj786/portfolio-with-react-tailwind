@@ -24,7 +24,7 @@ const Navbar = () => {
   const [dark, setDark] = useState(() => {
     const storedTheme = localStorage.theme;
 
-    if (storedTheme === 'dark' || !storedTheme) {
+    if (storedTheme === 'dark' ) {
       document.documentElement.classList.add('dark');
       localStorage.theme = 'dark';
       return true;
