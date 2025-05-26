@@ -52,7 +52,7 @@ const Blog = ({blogs}) => {
             {blogs.slice(0,4).map((blog, index) => (
               <Flex
   key={index}
-  className="blog-item mx-auto md:gap-x-[38px] w-[630px] h-[270px] max-w-[630px] md:flex-row flex-col border border-black group hover:border-primary rounded-[20px] py-[18px] px-[20px] bg-black"
+  className="blog-item mx-auto md:gap-x-[38px] w-[630px] md:h-[270px] max-w-[630px] md:flex-row flex-col border border-black group hover:border-primary rounded-[20px] py-[18px] px-[20px] bg-black"
 >
   {/* Image Section */}
   <div
