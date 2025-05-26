@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import project1 from '../../assets/project1.png'
 import project2 from '../../assets/project2.png'
 import project3 from '../../assets/project3.png'
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   
@@ -73,7 +74,10 @@ const Projects = () => {
             ))
           }
         </div>
+        <Link to="/projects">
         <RoundedElemText className="text-center md:text-subheading text-subheading-sm mx-auto mt-[80px] md:mt-[158px] font-bold" svg={<FiArrowUpRight/>}>View More</RoundedElemText>
+        
+        </Link>
       </Container>
     </div>
   );

@@ -5,62 +5,12 @@ import RoundedElemText from "../layouts/RoundedElemText";
 import { FiArrowUpRight } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import blog1 from "../assets/blog1.png";
 
-const BlogPage = () => {
+const BlogPage = ({blogs}) => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  const blogs = [
-    {
-      date: "12 Feb 2023",
-      title: "How to build",
-      link: "#",
-      image: blog1,
-    },
-    {
-      date: "12 Feb 2023",
-      title: "How to build a responsive website",
-      link: "#",
-      image: blog1,
-    },
-    {
-      date: "12 Feb 2023",
-      title: "How to build a responsive website",
-      link: "#",
-      image: blog1,
-    },
-    {
-      date: "12 Feb 2023",
-      title: "How to build a responsive website",
-      link: "#",
-      image: blog1,
-    },
-    {
-      date: "12 Feb 2023",
-      title: "How to build a responsive website",
-      link: "#",
-      image: blog1,
-    },
-    {
-      date: "12 Feb 2023",
-      title: "How to build a responsive website",
-      link: "#",
-      image: blog1,
-    },
-    {
-      date: "12 Feb 2023",
-      title: "How to build a responsive website",
-      link: "#",
-      image: blog1,
-    },
-    {
-      date: "12 Feb 2023",
-      title: "How to build a responsive website",
-      link: "#",
-      image: blog1,
-    },
-  ];
+
   return (
     <div id="blog" className="blog  relative overflow-x-hidden py-[150px] md:py-[207px] text-white bg-dark-bg">
       <div className="circle-blue absolute w-[152px] h-[152px] right-[10%] top-[10%] animate-pulse rounded-full bg-[rgba(82,73,206,0.21)] shadow-[0_0_100px_100px_rgba(82,73,206,0.21)]"></div>
@@ -76,7 +26,7 @@ const BlogPage = () => {
             {blogs.map((blog, index) => (
               <Flex
   key={index}
-  className="blog-item mx-auto md:gap-x-[38px] w-[630px] h-[270px] max-w-[630px] md:flex-row flex-col border border-black group hover:border-primary rounded-[20px] py-[18px] px-[20px] bg-black"
+  className="blog-item mx-auto md:gap-x-[38px] w-[630px] md:h-[270px] max-w-[630px] md:flex-row flex-col border border-black group hover:border-primary rounded-[20px] py-[18px] px-[20px] bg-black"
 >
   {/* Image Section */}
   <div
@@ -92,7 +42,7 @@ const BlogPage = () => {
   <div className="content md:text-left text-center flex flex-col h-[100%] justify-between max-w-[395px] w-full">
     <div>
       <p>{blog.date}</p>
-      <h3 className="group-hover:text-primary font-primary text-subheading-sm md:text-subheading font-bold mt-[3px] max-w-[295px] mb-[6px]">
+      <h3 className="group-hover:text-primary font-primary text-subheading-sm md:text-subheading font-bold mt-[3px] mx-auto md:mx-0 max-w-[295px] mb-[6px]">
         {blog.title}
       </h3>
     </div>

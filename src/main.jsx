@@ -11,14 +11,67 @@ import ProjectsPage from './pages/ProjectsPage.jsx'
 import Services from './components/services/Services.jsx';
 import ServicesPage from './pages/ServicesPage.jsx';
 
+import blog1 from "./assets/blog1.png";
+
+const blogs = [
+  {
+    date: "12 Feb 2023",
+    title: "How to build",
+    link: "#",
+    image: blog1,
+  },
+  {
+    date: "12 Feb 2023",
+    title: "How to build a responsive website",
+    link: "#",
+    image: blog1,
+  },
+  {
+    date: "12 Feb 2023",
+    title: "How to build a responsive website",
+    link: "#",
+    image: blog1,
+  },
+  {
+    date: "12 Feb 2023",
+    title: "How to build a responsive website",
+    link: "#",
+    image: blog1,
+  },
+  {
+    date: "12 Feb 2023",
+    title: "How to build a responsive website",
+    link: "#",
+    image: blog1,
+  },
+  {
+    date: "12 Feb 2023",
+    title: "How to build a responsive website",
+    link: "#",
+    image: blog1,
+  },
+  {
+    date: "12 Feb 2023",
+    title: "How to build a responsive website",
+    link: "#",
+    image: blog1,
+  },
+  {
+    date: "12 Feb 2023",
+    title: "How to build a responsive website",
+    link: "#",
+    image: blog1,
+  },
+];
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />, // common layout
     children: [
-      { path: "/", element: <App /> },
+      { path: "/", element: <App blogs={blogs} /> },
       { path: "/skill", element: <SkillPage /> },
-      { path: "/blog", element: <BlogPage /> },
+      { path: "/blog", element: <BlogPage blogs={blogs} /> },
       { path: "/projects", element: <ProjectsPage/>},
       { path: "/about", element: <About/>},
       { path: "/services", element: <ServicesPage/>},

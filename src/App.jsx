@@ -11,7 +11,9 @@ import Blog from './components/blog/Blog'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
-function App() {
+
+function App({blogs}) {
+
 
   return (
 <>
@@ -21,7 +23,7 @@ function App() {
 <Services/>
 <Skill/>
 <Projects/>
-<Blog/>
+<Blog blogs={blogs}/>
 <Contact/>
 </>
   )
