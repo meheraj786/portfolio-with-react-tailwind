@@ -8,6 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Logo from '../../layouts/Logo';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -22,35 +23,25 @@ const Footer = () => {
   const socialIcons= [
     {
       icon: <FaGithub />,
-      link: "#"
+      link: "https://github.com/meheraj786"
     },
     {
       icon: <FaLinkedin />,
-      link: "#"
+      link: "https://www.linkedin.com/in/mehraj-h/"
     },
     {
       icon: <FaFacebook />,
-      link: "#"
+      link: "https://www.facebook.com/mehrajh786/"
     },
   ]
-  const links= [
-    {
-      name: "Home",
-      link: "#"
-    },
-    {
-      name: "About",
-      link: "#"
-    },
-    {
-      name: "Projects",
-      link: "#"
-    },
-    {
-      name: "Contact",
-      link: "#"
-    },
-  ]
+  const navItems = [
+    { item: "Home", link: "/" },
+    { item: "About", link: "/about" },
+    { item: "Services", link: "/services" },
+    { item: "Skill", link: "/skill" },
+    { item: "Projects", link: "/projects" },
+    { item: "Blog", link: "/blog" },
+  ];
   return (
 <>
 <div  className="footer bg-[url(assets/lines.png)] bg-cover overflow-x-hidden text-center md:text-left text-white pt-[79px] bg-dark-bg">
@@ -64,9 +55,18 @@ const Footer = () => {
             <ul>
             <Flex className="gap-5 mt-3">
               {
-                links.map((link, index) => (
+                navItems.map((item, index) => (
                   <li key={index} className='text-body text-grey-200 cursor-pointer hover:opacity-80 font-medium'>
-                    <a href={link.link}>{link.name}</a>
+                    <NavLink
+                          to={item.link}
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-primary font-semibold"
+                              : "hover:text-primary"
+                          }
+                        >
+                          {item.item}
+                        </NavLink>
                   </li>
                 ))
               }

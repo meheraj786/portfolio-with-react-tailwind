@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Logo from '../../layouts/Logo';
 import { NavLink } from 'react-router-dom';
+import Mode from '../../layouts/Mode';
 
 const Navbar = () => {
   useEffect(() => {
@@ -20,12 +21,22 @@ const Navbar = () => {
 
   const [show, setShow] = useState(false);
   const [talk, setTalk] = useState(false);
+  const [dark, setDark] = useState(true)
 
-  const socialIcons = [
-    { icon: <FaGithub />, link: "#" },
-    { icon: <FaLinkedin />, link: "#" },
-    { icon: <FaFacebook />, link: "#" },
-  ];
+  const socialIcons= [
+    {
+      icon: <FaGithub />,
+      link: "https://github.com/meheraj786"
+    },
+    {
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/mehraj-h/"
+    },
+    {
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/mehrajh786/"
+    },
+  ]
 
   const navItems = [
     { item: "Home", link: "/" },
@@ -68,7 +79,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Let's Talk Button */}
-            <div className="details hidden md:block">
+            <div className="details items-center md:flex gap-8 hidden ">
               <RoundedElemText
                 className="mx-auto"
                 onClick={() => setTalk(true)}
@@ -76,12 +87,14 @@ const Navbar = () => {
               >
                 Let's Talk
               </RoundedElemText>
+            <Mode onClick={()=>setDark(!dark)} mode={dark}/>
             </div>
 
             {/* Mobile Toggle Button */}
             {show
               ? <IoMdClose onClick={() => setShow(!show)} className='md:hidden text-4xl' />
               : <TbMenu4 onClick={() => setShow(!show)} className='md:hidden text-4xl' />}
+              
           </Flex>
 
           {/* Mobile Nav Items */}
@@ -111,12 +124,14 @@ const Navbar = () => {
               <hr className='border-primary my-[20px] w-[50%] mx-auto' />
               <div className="details w-full text-center md:hidden">
                 <RoundedElemText
-                  className="mx-auto"
+                  className="mx-auto mb-5"
                   onClick={() => setTalk(true)}
                   svg={<FiArrowUpRight />}
                 >
                   Let's Talk
                 </RoundedElemText>
+                <Mode onClick={()=>setDark(!dark)} mode={dark}/>
+              
               </div>
             </div>
           )}
