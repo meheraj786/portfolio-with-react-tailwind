@@ -22,14 +22,19 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const [talk, setTalk] = useState(false);
   const [dark, setDark] = useState(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    const storedTheme = localStorage.theme;
+
+    if (storedTheme === 'dark' || !storedTheme) {
       document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
       return true;
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
       return false;
     }
   });
+
   useEffect(() => {
     if (dark) {
       document.documentElement.classList.add('dark');
@@ -39,6 +44,7 @@ const Navbar = () => {
       localStorage.theme = 'light';
     }
   }, [dark]);
+
 
   
 
