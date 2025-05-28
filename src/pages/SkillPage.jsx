@@ -17,13 +17,10 @@ import { FaGit } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-
-
-
-
-
-
-
+import { IoLogoFirebase } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiPostman } from "react-icons/si";
 
 const SkillPage = () => {
   useEffect(() => {
@@ -97,26 +94,26 @@ const SkillPage = () => {
 
     },
     {
-      icon: <SiMongodb />,
-      name: "MongoDB",
+      icon: <IoLogoFirebase />,
+      name: "FireBase",
       percent: "50%",
 
     },
     {
-      icon: <FaReact />,
-      name: "React",
+      icon: <RiTailwindCssFill />,
+      name: "Tailwind",
       percent: "50%",
 
     },
     {
-      icon: <SiExpress />,
-      name: "Express",
+      icon: <RiNextjsFill />,
+      name: "Next Js",
       percent: "50%",
 
     },
     {
-      icon: <FaNode />,
-      name: "NodeJs",
+      icon: <SiPostman />,
+      name: "Postman",
       percent: "50%",
 
     },
