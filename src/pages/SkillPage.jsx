@@ -13,6 +13,8 @@ import 'aos/dist/aos.css';
 import Container from '../layouts/Container';
 import Flex from '../layouts/Flex';
 import RoundedElemText from '../layouts/RoundedElemText';
+import { FaGit } from "react-icons/fa";
+
 
 
 
@@ -69,8 +71,8 @@ const SkillPage = () => {
 
     },
     {
-      icon: <FaFigma />,
-      name: "Figma",
+      icon: <FaGit />,
+      name: "Git",
       percent: "50%",
     },
     {
