@@ -14,6 +14,11 @@ import Container from '../layouts/Container';
 import Flex from '../layouts/Flex';
 import RoundedElemText from '../layouts/RoundedElemText';
 import { FaGit } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+
+
 
 
 
@@ -76,18 +81,18 @@ const SkillPage = () => {
       percent: "50%",
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
       percent: "50%",
     },
     {
-      icon: <FaCss3Alt />,
-      name: "CSS",
+      icon: <SiRedux />,
+      name: "Redux",
       percent: "50%",
     },
     {
-      icon: <FaJs />,
-      name: "JS",
+      icon: <SiMysql />,
+      name: "MySql",
       percent: "50%",
 
     },
