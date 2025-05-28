@@ -12,7 +12,7 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 
-function App({blogs}) {
+function App({blogs, projects}) {
 
 
   return (
@@ -22,7 +22,7 @@ function App({blogs}) {
 <About/>
 <Services/>
 <Skill/>
-<Projects/>
+<Projects projects={projects}/>
 <Blog blogs={blogs}/>
 <Contact/>
 </>
