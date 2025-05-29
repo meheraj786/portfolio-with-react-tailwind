@@ -28,8 +28,10 @@ const Banner = () => {
             <h1 className='font-secondary mt-[15px] md:mt-[27px] stroke-text-white mb-[12px] text-[68px] md:text-[98px] font-bold text-white '>Meheraj Hosen</h1>
             <h3 className='md:text-subheading text-subheading-sm font-primary font-medium text-white'>I'm <span className='text-primary'><TypeEffect/></span></h3>
             <p className='md:text-body px-2 md:px-0 text-body-sm mt-[27px] mb-[54px] text-white md:w-[450px] '>A passionate web developer based from Bangladesh.With a keen eye for detail and a passion for web design, I specialize in creating visually captivating and highlyfunctional websites</p>
-          <RoundedElemText className="justify-center md:justify-start" svg={<FiDownload />
+            <a href="https://github.com/meheraj786"><RoundedElemText className="justify-center md:justify-start" svg={<FiDownload />
 }>Download My Resume</RoundedElemText>
+</a>
+          
           </div>
           <div data-aos="fade-left" className="banner_right flex justify-center md:w-[50%]">
             <BannerShape className="w-[50px]"/>
