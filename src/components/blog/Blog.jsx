@@ -73,7 +73,7 @@ const Blog = ({blogs}) => {
       </h3>
     </div>
 
-    <Link to={`blog/${blog.id}`}>
+    <Link to={`/blogs/${blog.id}`}> 
       <RoundedElemText
         className="md:justify-start justify-center"
         svg={<FiArrowUpRight />}

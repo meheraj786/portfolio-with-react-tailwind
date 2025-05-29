@@ -275,7 +275,7 @@ const router = createBrowserRouter([
       { path: "/projects", element: <ProjectsPage projects={projects}/>},
       { path: "/about", element: <About/>},
       { path: "/services", element: <ServicesPage/>},
-      { path: "/blog/:blogId", element: <BlogDetails blogs={blogs}/>},
+      { path: "/blogs/:blogId", element: <BlogDetails blogs={blogs}/>},
 
     ],
   },

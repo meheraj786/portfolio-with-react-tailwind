@@ -5,6 +5,7 @@ import RoundedElemText from "../layouts/RoundedElemText";
 import { FiArrowUpRight } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 
 const BlogPage = ({blogs}) => {
   useEffect(() => {
@@ -47,14 +48,14 @@ const BlogPage = ({blogs}) => {
       </h3>
     </div>
 
-    <a href={blog.link}>
+    <Link to={`/blogs/${blog.id}`}> 
       <RoundedElemText
         className="md:justify-start justify-center"
         svg={<FiArrowUpRight />}
       >
         Read More
       </RoundedElemText>
-    </a>
+    </Link>
   </div>
 </Flex>
 

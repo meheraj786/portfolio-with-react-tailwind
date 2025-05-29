@@ -7,7 +7,7 @@ const BlogDetails = ({blogs}) => {
 
   const {blogId}= useParams()
   
-  const blog = blogs.find((b) => b.id.toString() === blogId);
+  const blog = blogs.find((b) => b.id== blogId);
 
   if (!blog) {
     return(
