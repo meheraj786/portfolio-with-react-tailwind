@@ -73,14 +73,14 @@ const Blog = ({blogs}) => {
       </h3>
     </div>
 
-    <a href={blog.link}>
+    <Link to={`blog/${blog.id}`}>
       <RoundedElemText
         className="md:justify-start justify-center"
         svg={<FiArrowUpRight />}
       >
         Read More
       </RoundedElemText>
-    </a>
+    </Link>
   </div>
 </Flex>
 

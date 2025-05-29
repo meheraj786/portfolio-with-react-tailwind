@@ -26,7 +26,6 @@ function App({blogs, projects}) {
 <Projects projects={projects}/>
 <Blog blogs={blogs}/>
 <Contact/>
-<BlogDetails/>
 </>
   )
 }

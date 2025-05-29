@@ -14,29 +14,6 @@ const Projects = ({projects}) => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  // const projects= [
-  //   {
-  //     img: project1,
-  //     category: "Web Design",
-  //     title: "A Simple Website Design with Figma",
-  //     description: "Sed ut perspiciatis unde omnis natus totam rem aperiam eaque inventore veritatis",
-  //     link: "#"
-  //   },
-  //   {
-  //     img: project2,
-  //     category: "Web Design",
-  //     title: "Another Design in Figma",
-  //     description: "Voluptatem accusantium doloremque laudantium, totam rem aperiam",
-  //     link: "#"
-  //   },
-  //   {
-  //     img: project3,
-  //     category: "UI/UX",
-  //     title: "Mobile App Design",
-  //     description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-  //     link: "#"
-  //   },
-  // ];
 
   return (
     <div id='projects' className="projects  relative overflow-x-hidden bg-dark-bg text-white font-secondary py-[50px] md:py-[99px]">

@@ -16,6 +16,7 @@ import project3 from './assets/project3.png'
 import project4 from './assets/project4.png'
 import project5 from './assets/project5.png'
 import blog1 from "./assets/blog1.png";
+import BlogDetails from './pages/BlogDetails.jsx';
 
 const blogs = [
   {
@@ -54,7 +55,7 @@ Consistency and Predictability: The Virtual DOM ensures that the UI is consisten
   {
     id: 2,
     date: "26 Feb 2025",
-    title: "Object-Oriented Programming in JavaScript-",
+    title: "Object-Oriented Programming in JavaScript",
     link: "#",
     image: blog1,
     content: (    <p className='text-body-sm md:text-body'>
@@ -274,6 +275,8 @@ const router = createBrowserRouter([
       { path: "/projects", element: <ProjectsPage projects={projects}/>},
       { path: "/about", element: <About/>},
       { path: "/services", element: <ServicesPage/>},
+      { path: "/blog/:blogId", element: <BlogDetails blogs={blogs}/>},
+
     ],
   },
 ]);
