@@ -10,6 +10,7 @@ import Projects from './components/projects/Projects'
 import Blog from './components/blog/Blog'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import BlogDetails from './pages/BlogDetails'
 
 
 function App({blogs, projects}) {
@@ -25,6 +26,7 @@ function App({blogs, projects}) {
 <Projects projects={projects}/>
 <Blog blogs={blogs}/>
 <Contact/>
+<BlogDetails/>
 </>
   )
 }
