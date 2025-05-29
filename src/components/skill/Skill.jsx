@@ -13,6 +13,7 @@ import { FaNode } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -79,9 +80,10 @@ const Skill = () => {
             <p className='max-w-[349px] md:text-body text-body-sm'>Sed ut perspiciatis unde omnis iste natus to
 voluptatem accusantium doloremque
 laudantium, totam rem aperiamc</p>
+<Link to="/skill">
 <RoundedElemText className="mt-[87px] md:justify-start justify-center md:mx-0" svg={<FiArrowUpRight/>}>
   Learn More
-</RoundedElemText>
+</RoundedElemText></Link>
           </div>
           <div data-aos="zoom-in-left" className="skill-right w-[70%]">
             <Flex className="flex-wrap  w-full mx-auto md:gap-y-[43px] gap-y-5">

@@ -17,6 +17,13 @@ import project4 from './assets/project4.png'
 import project5 from './assets/project5.png'
 import blog1 from "./assets/blog1.png";
 import BlogDetails from './pages/BlogDetails.jsx';
+import vdom from "./assets/vdom.jpg";
+import oop from "./assets/oop.jpg";
+import pi from "./assets/pi.jpg";
+import asyncjs from "./assets/asyncjs.jpg";
+import bt from "./assets/bt.jpg";
+import jsev from "./assets/jsev.jpg";
+import jsblog from "./assets/jsblog.jpg";
 
 const blogs = [
   {
@@ -24,7 +31,7 @@ const blogs = [
     date: "12 Mar 2025",
     title: "React Virtual DOM",
     link: "#",
-    image: blog1,
+    image: vdom,
     content: (    <p className='text-body-sm md:text-body'>
     Understanding the Power of the React Virtual DOM
 <br /><br />
@@ -57,7 +64,7 @@ Consistency and Predictability: The Virtual DOM ensures that the UI is consisten
     date: "26 Feb 2025",
     title: "Object-Oriented Programming in JavaScript",
     link: "#",
-    image: blog1,
+    image: oop,
     content: (    <p className='text-body-sm md:text-body'>
     Object-Oriented Programming in JavaScript-
     <br /><br />
@@ -96,7 +103,7 @@ Embracing OOP in JavaScript can lead to more organized, efficient, and scalable 
     date: "26 Feb 2025",
     title: "Immutable Nature of Math.PI ",
     link: "#",
-    image: blog1,
+    image: pi,
     content: (    <p className='text-body-sm md:text-body'>
     Exploring the Immutable Nature of Math.PI in JavaScript
     <br /><br />
@@ -120,7 +127,7 @@ Even with Object.defineProperty(), the Math.PI value remains untouchable. It's s
     date: "25 Feb 2025",
     title: "Asynchronous JavaScript​",
     link: "#",
-    image: blog1,
+    image: asyncjs,
     content: (    <p className='text-body-sm md:text-body'>
     Asynchronous JavaScript: Callback Hell, Promises, and Async/Await.
     <br /><br />
@@ -163,7 +170,7 @@ Conclusion: From Callback Hell to Async/Await, JavaScript has evolved to make as
     date: "22 Feb 2025",
     title: "Bootstrap and Tailwind CSS",
     link: "#",
-    image: blog1,
+    image: bt,
     content: (    <p className='text-body-sm md:text-body'>
     Bootstrap and Tailwind CSS: A New Developer's Journey.....
     <br /><br />
@@ -181,7 +188,7 @@ As someone new to web development, Bootstrap was a great choice for quickly prot
     date: "20 Feb 2025",
     title: "JavaScrip: The Evolution of the Web",
     link: "#",
-    image: blog1,
+    image: jsev,
     content: (    <p className='text-body-sm md:text-body'>
     In just ten days in 1995, Brendan Eich, a young Netscape developer, created a scripting language. The web has since been completely transformed by this language, which was first known as Mocha, then changed to LiveScript, and finally JavaScript. 
 JavaScript grew rapidly from its humble beginnings as a simple language for web animations and interactivity. It moved server-side with the release of Node.js in 2009, enabling programmers to use JavaScript for backend development. As frameworks and libraries like Angular, Vue.js, and React have grown in popularity, JavaScript has become one of the most widely used and adaptable programming languages worldwide. 
@@ -195,7 +202,7 @@ These days, JavaScript powers everything from straightforward webpages to intric
     date: "18 Feb 2025",
     title: "MERN Stack",
     link: "#",
-    image: blog1,
+    image: jsblog,
     content: (    <p className='text-body-sm md:text-body'>
     The MERN Stack is a JavaScript-based framework that enables developers to create full-stack web applications. It comprises MongoDB, Express.js, React, and Node.js. MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. Express.js is a web application framework for Node.js, providing robust features for web and mobile applications. React is a JavaScript library for building user interfaces, particularly single-page applications. Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine, enabling server-side scripting.
     <br /><br />
@@ -207,7 +214,7 @@ Working with the MERN Stack has been a game-changer for web developers, allowing
   {
     id: 8,
     date: "12 Feb 2025",
-    title: "The Future of the Tech Industry: A Glimpse into Tomorrow 🚀",
+    title: "The Future of the Tech Industry",
     link: "#",
     image: blog1,
     content: (    <p className='text-body-sm md:text-body'>
