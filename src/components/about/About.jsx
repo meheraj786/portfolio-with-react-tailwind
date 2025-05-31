@@ -44,9 +44,8 @@ const About = () => {
             <h3 className='text-white md:text-subheading text-subheading-sm font-bold md:w-[510px] font-primary'>
               Professional <span className='text-primary'>Problem Solutions</span> For Digital Products
             </h3>
-            <p className='md:text-body text-body-sm mt-4 mb-9 md:w-[350px] text-white'>
-              Sed ut perspiciatis unde omnis iste natus to
-              voluptatem accusantium doloremque laudantium, totam rem aperiamc
+            <p className='md:text-body text-body-sm mt-4 mb-9 md:w-[450px] text-white'>
+            A Passionate MERN stack Dev and Tech Enthusiast from the Milky Way Galaxy, within the Orion Arm, orbiting the Sol (Sun) star, living on the third orbital planet named Earth(A Blue Planet), in the continent of Asia, in the country of Bangladesh, in the city of Dhaka — a negligible being in the grand scheme of the cosmos.
             </p>
 
             {/* Invisible trigger div */}

@@ -109,7 +109,14 @@ laudantium, totam rem aperiamc.</p>
 <label className='hidden md:block' htmlFor="">Your Message</label>
 
 <textarea name="" id="" className='placeholder:text-grey-200  md:w-[735px] p-5 rounded-[20px] my-3  bg-black' cols="30" rows="10" placeholder='Your Message'></textarea>
-<button onClick={()=>setShow(true)} className='flex bg-primary rounded-[20px] text-black text-[18px] font-medium cursor-pointer hover:bg-dark-bg hvoer:border-primary hover:text-primary border border-primary items-center gap-3 p-[20px] mx-auto md:mx-0' type="submit">Submit <span className='text-2xl'><FiArrowUpRight/></span></button>
+<button onClick={() => {
+    console.log("Button clicked");
+    setShow(false); 
+    setTimeout(() => {
+      setShow(true); 
+      console.log("Show state set to true"); 
+    }, 100);
+  }}className='flex bg-primary rounded-[20px] text-black text-[18px] font-medium cursor-pointer hover:bg-dark-bg hvoer:border-primary hover:text-primary border border-primary items-center gap-3 p-[20px] mx-auto md:mx-0' type="submit">Submit <span className='text-2xl'><FiArrowUpRight/></span></button>
 </div>
             </form>
           </div>

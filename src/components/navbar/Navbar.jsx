@@ -21,27 +21,27 @@ const Navbar = () => {
 
   const [show, setShow] = useState(false);
   const [talk, setTalk] = useState(false);
-  const [dark, setDark] = useState(() => {
-    const storedTheme = localStorage.theme;
+  const [dark, setDark] = useState(false);
 
-    if (storedTheme === 'dark' ) {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-      return true;
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = 'light';
-      return false;
-    }
-  });
+  
+  //   () => {
+  //   const storedTheme = localStorage.theme;
+
+  //   if (storedTheme === 'dark' ) {
+  //     document.documentElement.classList.add('dark');
+  //     localStorage.theme = 'dark';
+  //     return true;
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //     localStorage.theme = 'light';
+  //     return false;
+  //   }
+  // }
+
 
   useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = 'light';
+    if (dark) {document.documentElement.classList.add('dark');
+    } else {document.documentElement.classList.remove('dark');
     }
   }, [dark]);
 
