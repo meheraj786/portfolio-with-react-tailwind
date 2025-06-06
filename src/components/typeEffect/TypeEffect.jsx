@@ -15,7 +15,7 @@ export const TypeEffect = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '32px', display: 'inline-block' }}
+      style={{display: 'inline-block' }}
       repeat={Infinity}
     />
   );
