@@ -120,7 +120,7 @@ useEffect(() => {
       </Container>
     </div>
     </div>
-    <div className="whatsapp p-[10px] md:p-[20px] md:text-[50px] text-[30px] bg-primary text-bg cursor-pointer hover:text-primary fixed md:right-[100px] right-[50px] md:bottom-[100px] bottom-[50px] hover:bg-transparent rounded-full hvoer:border-primary border border-primary opacity-80 hover:opacity-100">
+    <div className="whatsapp p-[10px] md:p-[20px] md:text-[50px] text-[30px] bg-primary text-bg cursor-pointer hover:text-primary fixed md:right-[100px] left-[50px] md:bottom-[100px] bottom-[35px] hover:bg-transparent rounded-full hvoer:border-primary border border-primary opacity-80 hover:opacity-100">
 <a href='https://api.whatsapp.com/send?phone=1989162543&text=I%20want%20to%20know%20about%20your%20products?' target='blank'><FaWhatsapp /></a>
     </div>
     </>
