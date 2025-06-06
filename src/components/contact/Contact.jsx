@@ -87,22 +87,22 @@ laudantium, totam rem aperiamc.</p>
             <form className='' action="">
 <Flex className="flex-col md:flex-row">
   <div>
-    <label htmlFor="">Your Name</label>
-  <input type="text" className='placeholder:text-grey-200 md:w-[350px] ml-5 md:ml-0 my-3 p-5 rounded-[20px] bg-black' placeholder='Your Name' />
+    <label className='hidden md:inline-block' htmlFor="">Your Name</label>
+  <input type="text" className='placeholder:text-grey-200 md:w-[350px] w-full ml-5 md:ml-0 my-3 p-5 rounded-[20px] bg-black' placeholder='Your Name' />
   </div>
   <div>
-  <label htmlFor="">Your Email</label>
-  <input type="email" className='placeholder:text-grey-200 p-5 md:w-[350px] ml-5 md:ml-0 my-3 rounded-[20px] bg-black' placeholder='Your Email' />
+  <label className='hidden md:inline-block' htmlFor="">Your Email</label>
+  <input type="email" className='placeholder:text-grey-200 p-5 md:w-[350px] w-full ml-5 md:ml-0 my-3 rounded-[20px] bg-black' placeholder='Your Email' />
   </div>
 </Flex>
 <Flex className="md:flex-row flex-col">
   <div>
-    <label htmlFor="">Your Number</label>
-  <input type="number" className='placeholder:text-grey-200 md:w-[350px] ml-3 md:ml-0 my-3 p-5 rounded-[20px] bg-black' placeholder='Your Name' />
+    <label className='hidden md:inline-block' htmlFor="">Your Number</label>
+  <input type="number" className='placeholder:text-grey-200 md:w-[350px] ml-3 md:ml-0 my-3 p-5 w-full rounded-[20px] bg-black' placeholder='Your Name' />
   </div>
   <div>
-  <label htmlFor="">Your Subject</label>
-  <input type="text" className='placeholder:text-grey-200 p-5 md:w-[350px] ml-3 md:ml-0 my-3 rounded-[20px] bg-black' placeholder='Your Email' />
+  <label className='hidden md:inline-block' htmlFor="">Your Subject</label>
+  <input type="text" className='placeholder:text-grey-200 p-5 md:w-[350px] ml-3 w-full md:ml-0 my-3 rounded-[20px] bg-black' placeholder='Your Email' />
   </div>
 </Flex>
 <div className='text-center md:text-left'>
