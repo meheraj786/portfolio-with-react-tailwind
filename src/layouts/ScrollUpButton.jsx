@@ -23,7 +23,7 @@ const ScrollUpButton = () => {
     <>
     {
       showButton && (
-            <div onClick={scrollToTop} className='p-3 rounded-full bg-primary cursor pointer fixed z-[999] bottom-10 hover:bg-transparent hover:border hover:border-primary hover:text-primary text-black right-10'><FaArrowUp />
+            <div onClick={scrollToTop} className='p-3 rounded-full bg-primary cursor pointer fixed z-[99999] bottom-10 hover:bg-transparent hover:border hover:border-primary hover:text-primary text-black right-10'><FaArrowUp />
     </div>
      )
     }
