@@ -3,7 +3,8 @@
 @source "../.flowbite-react/class-list.json";
 @custom-variant dark (&:where(.dark, .dark *));
 
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
 
@@ -20,8 +21,8 @@
   --text-subheading-sm: 22px;
   --text-body: 16px;
   --text-body-sm: 14px;
-  --font-primary: 'Lexend', sans-serif;
-  --font-secondary: 'Poppins', sans-serif;
+  --font-primary: "JetBrains Mono", monospace;
+  --font-secondary: "Fira Code", monospace;
   --font-counter: 'Orbitron', 'sans-serif';
   --color-html: #DD4B25;
   --color-h1: #ffffff;
