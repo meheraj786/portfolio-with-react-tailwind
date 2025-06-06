@@ -73,3 +73,7 @@ html {
     transform: translateY(0px);
   }
 }
+
+body{
+  cursor: none
+}
