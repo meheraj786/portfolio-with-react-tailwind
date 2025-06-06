@@ -71,7 +71,7 @@ const About = () => {
 
           <div data-aos="fade-down-left" className="about-right mt-5 md:mt-0 relative md:w-[50%]">
             <div className="img 
- bg-[url(assets/aboutImage.jpg)] grayscale-50 hover:grayscale-0 bg-cover group border border-black hover:border hover:border-primary ms-auto relative bg-white max-w-[346px] min-w-[300px] h-[363px] font-semibold rounded-[10px]">
+bg-[url(assets/aboutImage.jpg)] grayscale-50 hover:grayscale-0 bg-cover group border border-black hover:border hover:border-primary ms-auto relative bg-white max-w-[346px] min-w-[300px] h-[363px] font-semibold rounded-[10px]">
               <span className='bg-white text-black px-[15px] group-hover:border group-hover:border-primary py-[13px] rounded-[30px] absolute md:left-[-99px] left-1/2 -translate-x-1/2 md:-translate-x-0 md:bottom-[142px] bottom-[-40px]'>
                 MERN Stack Developer
               </span>
