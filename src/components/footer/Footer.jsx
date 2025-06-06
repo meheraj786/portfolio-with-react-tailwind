@@ -87,7 +87,7 @@ useEffect(() => {
   return (
 <>
 {show && successToast}
-<div  className="footer bg-[url(assets/lines.png)] bg-cover overflow-x-hidden text-center md:text-left text-white pt-[79px] bg-dark-bg">
+<div  className="footer bg-[url(assets/lines.png)] bg-cover overflow-x-hidden font-secondary text-center md:text-left text-white pt-[79px] bg-dark-bg">
       <Container>
         <Flex  className="md:px-[88px] gap-y-5 md:gap-y-0 flex-col md:flex-row rounded-[20px] bg-black py-[104px]">
           <div data-aos="fade-up" className="left">
@@ -129,7 +129,7 @@ useEffect(() => {
           </div>
         </Flex>
       </Container>
-    <div className="footer_bottom bg-dark-bg py-[40px]">
+    <div className="footer_bottom font-secondary bg-dark-bg py-[40px]">
       <Container>
         <Flex className="justify-between gap-y-4 md:gap-y-0 flex-col md:flex-row">
           <div className="left opacity-80">
