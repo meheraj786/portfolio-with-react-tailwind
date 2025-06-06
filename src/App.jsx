@@ -11,6 +11,7 @@ import Blog from './components/blog/Blog'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import BlogDetails from './pages/BlogDetails'
+import ScrollUpButton from './layouts/ScrollUpButton'
 
 
 function App({blogs, projects}) {

@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import Logo from '../../layouts/Logo';
 import { NavLink } from 'react-router-dom';
 import Mode from '../../layouts/Mode';
+import ScrollUpButton from '../../layouts/ScrollUpButton';
 
 const Navbar = () => {
   useEffect(() => {
@@ -75,6 +76,8 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar overflow-x-hidden py-6 z-[99999] fixed w-[100vw] bg-bg text-white font-secondary">
+        
+      <ScrollUpButton/>
         <Container>
           <Flex className="px-5 md:px-0">
             <div className="logo">
