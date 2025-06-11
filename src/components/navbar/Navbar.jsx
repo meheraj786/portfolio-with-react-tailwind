@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import Container from '../../layouts/Container';
+import React, { useEffect, useState } from "react";
+import Container from "../../layouts/Container";
 import Flex from "../../layouts/Flex";
-import RoundedElemText from '../../layouts/RoundedElemText';
+import RoundedElemText from "../../layouts/RoundedElemText";
 import { FiArrowUpRight } from "react-icons/fi";
 import { TbMenu4 } from "react-icons/tb";
 import { IoMdClose } from "react-icons/io";
-import RoundIconBox from '../../layouts/RoundIconBox';
+import RoundIconBox from "../../layouts/RoundIconBox";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { LuArrowUpLeft } from "react-icons/lu";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Logo from '../../layouts/Logo';
-import { NavLink } from 'react-router-dom';
-import Mode from '../../layouts/Mode';
-import ScrollUpButton from '../../layouts/ScrollUpButton';
-import MouseElement from '../../layouts/MouseElement';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Logo from "../../layouts/Logo";
+import { NavLink } from "react-router-dom";
+import Mode from "../../layouts/Mode";
+import ScrollUpButton from "../../layouts/ScrollUpButton";
+import MouseElement from "../../layouts/MouseElement";
 
 const Navbar = () => {
   useEffect(() => {
@@ -25,7 +25,6 @@ const Navbar = () => {
   const [talk, setTalk] = useState(false);
   const [dark, setDark] = useState(false);
 
-  
   //   () => {
   //   const storedTheme = localStorage.theme;
 
@@ -40,30 +39,28 @@ const Navbar = () => {
   //   }
   // }
 
-
   useEffect(() => {
-    if (dark) {document.documentElement.classList.add('dark');
-    } else {document.documentElement.classList.remove('dark');
+    if (dark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
     }
   }, [dark]);
 
-
-  
-
-  const socialIcons= [
+  const socialIcons = [
     {
       icon: <FaGithub />,
-      link: "https://github.com/meheraj786"
+      link: "https://github.com/meheraj786",
     },
     {
       icon: <FaLinkedin />,
-      link: "https://www.linkedin.com/in/mehraj-h/"
+      link: "https://www.linkedin.com/in/mehraj-h/",
     },
     {
       icon: <FaFacebook />,
-      link: "https://www.facebook.com/mehrajh786/"
+      link: "https://www.facebook.com/mehrajh786/",
     },
-  ]
+  ];
 
   const navItems = [
     { item: "Home", link: "/" },
@@ -77,7 +74,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar overflow-x-hidden py-6 z-[99999] fixed w-[100vw] bg-bg text-white font-secondary">
-        
+
       <ScrollUpButton/>
       <MouseElement/>
         <Container>
@@ -124,7 +121,7 @@ const Navbar = () => {
             {show
               ? <IoMdClose onClick={() => setShow(!show)} className='md:hidden text-4xl' />
               : <TbMenu4 onClick={() => setShow(!show)} className='md:hidden text-4xl' />}
-              
+
           </Flex>
 
           {/* Mobile Nav Items */}
@@ -161,7 +158,7 @@ const Navbar = () => {
                   Let's Talk
                 </RoundedElemText>
                 <Mode onClick={()=>setDark(!dark)} mode={dark}/>
-              
+
               </div>
             </div>
           )}
@@ -210,6 +207,65 @@ const Navbar = () => {
       </div>
     </>
   );
+  // return (
+  //   <div className='div className="navbar overflow-x-hidden py-6 z-[99999] fixed w-[100vw] text-white font-secondary '>
+  //     <Container>
+  //       <div className="nav bg-bg w-full px-5 rounded-full">
+  //         <Flex className="">
+  //           <ul>
+  //             <Flex className="gap-4">
+  //             {navItems.slice(0, 3).map((item, i) => (
+  //               <li className="" key={i}>
+  //                 <NavLink
+  //                   to={item.link}
+  //                   className={({ isActive }) =>
+  //                     isActive ? "bg-primary font-semibold px-7 py-3 rounded-full text-bg" : "hover:text-white px-7 py-3"
+  //                   }
+  //                 >
+  //                   {item.item}
+  //                 </NavLink>
+  //               </li>
+  //             ))}
+  //             </Flex>
+  //           </ul>
+  //           <div className="logo">
+  //             <Logo />
+  //           </div>
+  //           <ul>
+  //             <Flex className="gap-4">
+  //             {navItems.slice(3, 6).map((item, i) => (
+  //               <li className="" key={i}>
+  //                 <NavLink
+  //                   to={item.link}
+  //                   className={({ isActive }) =>
+  //                     isActive ? "bg-primary font-semibold px-7 py-3 rounded-full text-bg" : "hover:text-white px-7 py-3"
+  //                   }
+  //                 >
+  //                   {item.item}
+  //                 </NavLink>
+  //               </li>
+  //             ))}
+  //             </Flex>
+  //           </ul>
+  //         </Flex>
+  //       </div>
+  //     </Container>
+  //     <div className="subNav rounded-b-[50%] md:w-[10%] bg-bg  mx-auto">
+  //      <Flex className="details gap-y-2 p-5 flex-col items-center md:flex hidden ">
+  //             <RoundedElemText
+  //               className="mx-auto"
+  //               onClick={() => setTalk(true)}
+  //               svg={<FiArrowUpRight />}
+  //             >
+  //               Let's Talk
+  //             </RoundedElemText>
+  //           <Mode onClick={()=>setDark(!dark)} mode={dark}/>
+  //           </Flex>
+
+  //     </div>
+      
+  //   </div>
+  // );
 };
 
 export default Navbar;
