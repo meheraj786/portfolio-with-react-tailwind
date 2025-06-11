@@ -119,7 +119,7 @@ const Navbar = () => {
 
             {/* Mobile Toggle Button */}
             {show
-              ? <IoxlClose onClick={() => setShow(!show)} className='xl:hidden text-4xl' />
+              ? <IoMdClose onClick={() => setShow(!show)} className='xl:hidden text-4xl' />
               : <TbMenu4 onClick={() => setShow(!show)} className='xl:hidden text-4xl' />}
 
           </Flex>
