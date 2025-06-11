@@ -78,7 +78,7 @@ const Navbar = () => {
       <ScrollUpButton/>
       <MouseElement/>
         <Container>
-          <Flex className="px-5 md:px-0">
+          <Flex className="px-5 xl:px-0">
             <div className="logo">
               <Logo />
             </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
             {/* Desktop Nav Items */}
             <div className="items">
               <ul>
-                <Flex className='flex-row hidden md:flex gap-x-[35px]'>
+                <Flex className='flex-row hidden xl:flex gap-x-[35px]'>
                   {navItems.map((item) => (
                     <li key={item.item} className="font-medium">
                       <NavLink
@@ -106,7 +106,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Let's Talk Button */}
-            <div className="details items-center md:flex gap-8 hidden ">
+            <div className="details items-center xl:flex gap-8 hidden ">
               <RoundedElemText
                 className="mx-auto"
                 onClick={() => setTalk(true)}
@@ -119,8 +119,8 @@ const Navbar = () => {
 
             {/* Mobile Toggle Button */}
             {show
-              ? <IoMdClose onClick={() => setShow(!show)} className='md:hidden text-4xl' />
-              : <TbMenu4 onClick={() => setShow(!show)} className='md:hidden text-4xl' />}
+              ? <IoxlClose onClick={() => setShow(!show)} className='xl:hidden text-4xl' />
+              : <TbMenu4 onClick={() => setShow(!show)} className='xl:hidden text-4xl' />}
 
           </Flex>
 
@@ -129,7 +129,7 @@ const Navbar = () => {
             <div>
               <div className="items">
                 <ul>
-                  <Flex className='flex-col md:hidden gap-y-[15px]'>
+                  <Flex className='flex-col xl:hidden gap-y-[15px]'>
                     {navItems.map((item) => (
                       <li key={item.item} className="font-medium hover:text-primary">
                         <NavLink
@@ -149,7 +149,7 @@ const Navbar = () => {
                 </ul>
               </div>
               <hr className='border-primary my-[20px] w-[50%] mx-auto' />
-              <div className="details w-full text-center md:hidden">
+              <div className="details w-full text-center xl:hidden">
                 <RoundedElemText
                   className="mx-auto mb-5"
                   onClick={() => setTalk(true)}
@@ -183,7 +183,7 @@ const Navbar = () => {
               </p>
 
               <div className="address mt-[53px] mb-9">
-                <h4 className='text-[24px] mb-3 md:mb-[38px] font-bold'>Address</h4>
+                <h4 className='text-[24px] mb-3 xl:mb-[38px] font-bold'>Address</h4>
                 <ul>
                   <li className='mb-[15px]'>Mohammadpur, Dhaka, Bangladesh</li>
                   <li className='mb-[15px]'>meherajhosen786@gmail.com</li>
@@ -192,7 +192,7 @@ const Navbar = () => {
               </div>
 
               <div className="follow">
-                <h4 className='text-[24px] mt-[75px] mb-3 md:mb-[38px] font-bold'>Follow Me</h4>
+                <h4 className='text-[24px] mt-[75px] mb-3 xl:mb-[38px] font-bold'>Follow Me</h4>
                 <ul className='flex gap-5'>
                   {socialIcons.map((icon, index) => (
                     <li key={index} className='text-primary text-[24px] hover:opacity-80'>
@@ -250,8 +250,8 @@ const Navbar = () => {
   //         </Flex>
   //       </div>
   //     </Container>
-  //     <div className="subNav rounded-b-[50%] md:w-[10%] bg-bg  mx-auto">
-  //      <Flex className="details gap-y-2 p-5 flex-col items-center md:flex hidden ">
+  //     <div className="subNav rounded-b-[50%] xl:w-[10%] bg-bg  mx-auto">
+  //      <Flex className="details gap-y-2 p-5 flex-col items-center xl:flex hidden ">
   //             <RoundedElemText
   //               className="mx-auto"
   //               onClick={() => setTalk(true)}
